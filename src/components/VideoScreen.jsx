@@ -34,7 +34,7 @@ function VideoScreen() {
             <div className="flex-1 w-full aspect-video md:aspect-auto bg-black rounded-lg overflow-hidden">
               {videoId ? (
                 <VideoPlayer
-                  src={`http://localhost:8000/api/videos/${videoId}/master.m3u8`}
+                  src={`http://localhost:8000/api/videos/${videoId}/manifest.mpd`}
                   className="w-full h-full object-contain"
                 />
               ) : (
